@@ -2,6 +2,20 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHvxk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVew8.ttf) format('truetype');
+}
 html,
 body,
 div,
@@ -133,7 +147,168 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Lato', sans-serif;
 }
-body h2 {
-  color: red;
+body {
+  background-image: url("/img/background.jpg");
+  background-size: cover;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container .container {
+    width: 100%;
+  }
+}
+.container header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2%;
+}
+.container header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  margin-right: 1%;
+}
+@media (max-width: 500px) {
+  .container header nav {
+    flex-direction: column;
+    display: flex;
+  }
+}
+.container header nav a {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #E2E0E2;
+}
+.container .colorContainer {
+  background-color: #E2E0E2;
+}
+.container .intro {
+  background: #A2AEBB;
+  height: 45vh;
+}
+.container .intro .introDiv {
+  margin-bottom: 2%;
+}
+.container .intro .introDiv h1 {
+  font-size: 2rem;
+  padding-left: 2%;
+}
+.container .intro .introDiv img {
+  width: auto;
+  height: 200px;
+  padding: 2%;
+}
+.container .intro .introDiv p {
+  line-height: 1.2;
+  padding: 1% 0 0 2%;
+}
+.container .intro .introDivBottom {
+  margin-bottom: 2%;
+}
+.container .intro .introDivBottom p {
+  line-height: 1.2;
+  padding: 1% 2% 0 2%;
+  margin-bottom: 2%;
+}
+.container .intro .introDivBottom .button {
+  text-decoration: none;
+  background-color: #23B5D3;
+  margin-left: 2%;
+  color: black;
+  padding: 0.5%;
+}
+.container .aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 25vh;
+  align-items: baseline;
+}
+.container .aboutMe .description {
+  width: 50%;
+  padding: 3%;
+}
+.container .aboutMe .description h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 2%;
+}
+.container .aboutMe .description p {
+  line-height: 1.2;
+}
+.container .aboutMe .skills {
+  width: 50%;
+  padding: 3%;
+}
+.container .aboutMe .skills h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 2%;
+}
+.container .aboutMe .skills p {
+  border: 1px solid lightgrey;
+  padding-bottom: 2%;
+}
+.container .divider {
+  border-top: 1px dashed black;
+  width: 95%;
+  margin: 0 auto 2% auto;
+}
+.container .workHistory {
+  padding: 2%;
+}
+.container .workHistory h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.container .workHistory table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: separate;
+  margin-top: 2%;
+}
+.container .workHistory td,
+.container .workHistory th {
+  text-align: center;
+  padding: 1%;
+}
+.container .workHistory tr:nth-child(odd) {
+  background-color: #eeeded;
+}
+.container .workHistory tr:nth-child(even) {
+  background-color: #75ABBC;
+}
+.container .workHistory th:nth-child(1) {
+  width: 30%;
+}
+.container .workHistory th:nth-child(2) {
+  width: 30%;
+}
+.container .workHistory th:nth-child(3) {
+  width: 40%;
+}
+.container footer {
+  margin-top: 2%;
+  background-color: #071013;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container footer h3 {
+  color: white;
+  font-size: 1.2rem;
+}
+.container footer p {
+  color: white;
+  font-size: 0.8rem;
 }
