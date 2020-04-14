@@ -146,6 +146,10 @@ body {
 		background:@header-color;
 		height: 45vh;
 
+		@media @mobile {
+			height: 60vh;
+		}
+
 		.introDiv {
 			margin-bottom: 2%;
 
@@ -222,6 +226,7 @@ body {
 
 		@media @mobile {
 			.flexColumnCenter();
+			height: 40vh;
 		}
 
 		.description {
@@ -231,6 +236,7 @@ body {
 			@media @mobile {
 				width: 100%;
 				text-align: center;
+				margin-top: 5%;
 			}
 
 			h2 {
@@ -239,7 +245,7 @@ body {
 				padding-bottom: 2%;
 
 				@media @mobile {
-					font-size: 2rem;
+					font-size: 1.8rem;
 					padding-bottom: 3%;
 				}
 			}
@@ -270,7 +276,7 @@ body {
 				padding-bottom: 2%;
 
 				@media @mobile {
-					font-size: 2rem;
+					font-size: 1.8rem;
 					margin-bottom: 4%;
 				}
 			}
@@ -280,7 +286,7 @@ body {
 				padding-bottom: 2%;
 
 				@media @mobile {
-					padding-bottom: ;
+					padding: 2%;
 					font-size: 1.3rem;
 				}
 	

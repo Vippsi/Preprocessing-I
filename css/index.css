@@ -205,6 +205,11 @@ body {
   background: #A2AEBB;
   height: 45vh;
 }
+@media (max-width: 500px) {
+  .container .intro {
+    height: 60vh;
+  }
+}
 .container .intro .introDiv {
   margin-bottom: 2%;
 }
@@ -279,6 +284,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 40vh;
   }
 }
 .container .aboutMe .description {
@@ -289,6 +295,7 @@ body {
   .container .aboutMe .description {
     width: 100%;
     text-align: center;
+    margin-top: 5%;
   }
 }
 .container .aboutMe .description h2 {
@@ -298,7 +305,7 @@ body {
 }
 @media (max-width: 500px) {
   .container .aboutMe .description h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-bottom: 3%;
   }
 }
@@ -328,7 +335,7 @@ body {
 }
 @media (max-width: 500px) {
   .container .aboutMe .skills h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 4%;
   }
 }
@@ -338,7 +345,7 @@ body {
 }
 @media (max-width: 500px) {
   .container .aboutMe .skills p {
-    padding-bottom: ;
+    padding: 2%;
     font-size: 1.3rem;
   }
 }
